@@ -1,0 +1,31 @@
+class MyApp extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: 'CamperBot'
+    }
+  }
+  render() {
+    return (
+       <div>
+         {/* Create a name property in order to pass it to the child */}
+         <Navbar name = {this.state.name}/>
+       </div>
+    );
+  }
+};
+
+class Navbar extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  render() {
+    return (
+    <div>
+      {/* We are passing down the props from parent's constructor */}
+      <h1>Hello, my name is: {this.props.name}</h1>
+      
+    </div>
+    );
+  }
+};
