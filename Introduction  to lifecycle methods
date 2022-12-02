@@ -1,0 +1,12 @@
+class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+  }
+  componentWillMount() {
+    // Above lifecycle methods are applied above the render method
+    console.log("Team Africa")
+  }
+  render() {
+    return <div />
+  }
+};
