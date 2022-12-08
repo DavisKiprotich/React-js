@@ -1,0 +1,14 @@
+// create an object in variable styles
+let styles = {
+  color: "purple",
+  fontSize: 40,
+  border: "2px solid purple"
+}
+class Colorful extends React.Component {
+  render() {
+    // apply the styles variable
+    return (
+      <div style={styles}>Style Me!</div>
+    );e
+  }
+};
